@@ -1,0 +1,21 @@
+// write bootstrap setting in this file 
+@import "settings/variables"
+
+@import "twitter/bootstrap"
+
+// override bootstrap sass in this file (if you write your own componet don't put in this file)
+@import "settings/override"
+
+@import "bootstrap-datepicker"
+@import "rails_bootstrap_forms"
+
+// Icons
+@import "font-awesome"
+
+
+// It may not trigger compile css in development mode, when you add sass files to shared/, pages/ folder
+// because sass cache, you can type a whitespace in this file to clean cache for trigger re-compile sass files
+// Shared Component
+@import "shared/*"
+// Pages
+@import "pages/*"
